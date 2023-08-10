@@ -1,83 +1,71 @@
 import java.util.Scanner;
 
-public class ComplexNoCalcVar1 {
-    double real;
-    double imag;
+public class ComplexNoCalcVar1 
+{
 
-    ComplexNoCalcVar1(double real, double imag) {
-        this.real = real;
-        this.imag = imag;
-    }
+    public static void main(String args[]) 
+    {
+        double r1, r2, i1, i2, radd, iadd, rsub, isub, rmul, imul, rdiv, idiv, den;
+        Scanner sc = new Scanner(System.in);
 
-    ComplexNoCalcVar1 add(ComplexNoCalcVar1 other) {
-        double newReal = this.real + other.real;
-        double newImag = this.imag + other.imag;
-        return new ComplexNoCalcVar1(newReal, newImag);
-    }
+        System.out.println("Enter real 1: ");
+        r1 = sc.nextDouble();
+        System.out.println("Enter imaginary 1: ");
+        i1 = sc.nextDouble();
+        System.out.println("Enter real 2: ");
+        r2 = sc.nextDouble();
+        System.out.println("Enter imaginary 2: ");
+        i2 = sc.nextDouble();
 
-    ComplexNoCalcVar1 sub(ComplexNoCalcVar1 other) {
-        double newReal = this.real - other.real;
-        double newImag = this.imag - other.imag;
-        return new ComplexNoCalcVar1(newReal, newImag);
-    }
+        radd = r1 + r2;
+        iadd = i1 + i2;
 
-    ComplexNoCalcVar1 mul(ComplexNoCalcVar1 other) {
-        double newReal = this.real * other.real - this.imag * other.imag;
-        double newImag = this.real * other.imag + this.imag * other.imag;
-        return new ComplexNoCalcVar1(newReal, newImag);
-    }
+        rsub = r1 - r2;
+        isub = i1 - i2;
 
-    ComplexNoCalcVar1 div(ComplexNoCalcVar1 other) {
-        double den = other.real * other.real + other.imag * other.imag;
-        double newReal = (this.real * other.real + this.imag * other.imag) / den;
-        double newImag = (this.imag * other.real - this.real * other.imag) / den;
-        return new ComplexNoCalcVar1(newReal, newImag);
-    }
+        rmul = r1 * r2 - i1 * i2;
+        imul = r1 * i2 + i1 * r2;
 
-    void display() {
-        if (imag >= 0) {
-            System.out.println(real + " + " + imag + "i");
-        } else {
-            System.out.println(real + " - " + (-imag) + "i");
+        den = r2 * r2 + i2 * i2;
+        rdiv = (r1 * r2 + i1 * i2) / den;
+        idiv = (i1 * r2 - r1 * i2) / den;
+
+        if (iadd >= 0) 
+        {
+            System.out.println("Sum is: " + radd + " + " + iadd + "i");
+        } 
+        else 
+        {
+            System.out.println("Sum is: " + radd + " - " + (-iadd) + "i");
         }
-    }
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        if (isub >= 0) 
+        {
+            System.out.println("Difference: " + rsub + " + " + isub + "i");
+        } 
+        else 
+        {
+            System.out.println("Difference: " + rsub + " - " + (-isub) + "i");
+        }
 
-        System.out.println("Enter 1st complex number (real imaginary): ");
-        double real1 = scanner.nextDouble();
-        double imag1 = scanner.nextDouble();
-        ComplexNoCalcVar1 num1 = new ComplexNoCalcVar1(real1, imag1);
+        if (imul >= 0) 
+        {
+            System.out.println("Product is: " + rmul + " + " + imul + "i");
+        } 
+        else 
+        {
+            System.out.println("Product is: " + rmul + " - " + (-imul) + "i");
+        }
 
-        System.out.println("Enter 2nd complex number (real imaginary): ");
-        double real2 = scanner.nextDouble();
-        double imag2 = scanner.nextDouble();
-        ComplexNoCalcVar1 num2 = new ComplexNoCalcVar1(real2, imag2);
+        if (idiv >= 0) 
+        {
+            System.out.println("Division is: " + rdiv + " + " + idiv + "i");
+        } 
+        else 
+        {
+            System.out.println("Division is: " + rdiv + " - " + (-idiv) + "i");
+        }
 
-        ComplexNoCalcVar1 sum = num1.add(num2);
-        ComplexNoCalcVar1 diff = num1.sub(num2);
-        ComplexNoCalcVar1 prod = num1.mul(num2);
-        ComplexNoCalcVar1 quo = num1.div(num2);
-
-        System.out.print("\n1st complex number: ");
-        num1.display();
-
-        System.out.print("2nd complex number: ");
-        num2.display();
-
-        System.out.println("\nAddition: ");
-        sum.display();
-
-        System.out.println("\nSubtraction: ");
-        diff.display();
-
-        System.out.println("\nMultiplication: ");
-        prod.display();
-
-        System.out.println("\nDivision: ");
-        quo.display();
-
-        scanner.close();
+        sc.close();
     }
 }
