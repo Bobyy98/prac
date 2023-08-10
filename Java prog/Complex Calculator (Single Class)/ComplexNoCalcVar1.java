@@ -23,7 +23,7 @@ public class ComplexNoCalcVar1 {
 
     ComplexNoCalcVar1 mul(ComplexNoCalcVar1 other) {
         double newReal = this.real * other.real - this.imag * other.imag;
-        double newImag = this.real * other.imag + this.imag * other.real;
+        double newImag = this.real * other.imag + this.imag * other.imag;
         return new ComplexNoCalcVar1(newReal, newImag);
     }
 
