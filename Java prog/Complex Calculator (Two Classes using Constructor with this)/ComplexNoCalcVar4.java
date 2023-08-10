@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-class ComplexNo {
+class ComplexNo 
+{
     double real;
     double imag;
 
@@ -43,7 +44,7 @@ class ComplexNo {
     }
 }
 
-public class ComplexNoCalcVar2 {
+public class ComplexNoCalcVar4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
