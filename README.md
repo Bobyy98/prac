@@ -1,2 +1,2 @@
-# prac
+# Example Codes
 for practice
