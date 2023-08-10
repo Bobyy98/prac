@@ -23,7 +23,7 @@ class ComplexNo {
 
     ComplexNo mul(ComplexNo other) {
         double newReal = this.real * other.real - this.imag * other.imag;
-        double newImag = this.real * other.real + this.imag * other.real;
+        double newImag = this.real * other.real + this.imag * other.imag;
         return new ComplexNo(newReal, newImag);
     }
 
