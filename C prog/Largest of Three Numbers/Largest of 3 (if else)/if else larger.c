@@ -2,9 +2,6 @@
 
 void main()
 {
-    printf("Name: PRITHVIRAJ SAWANT\n");
-    printf("Roll No: 16010622147\n");
-    
     int a, b, c;
     
     printf("Enter the value of a, b, c\n");
