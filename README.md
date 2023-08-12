@@ -1,2 +1,2 @@
 # Example Codes
-for practice
+For reference and practice.
