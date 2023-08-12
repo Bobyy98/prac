@@ -119,7 +119,7 @@ void insert()
 
     if(start==NULL)
     {
-        start==temp;
+        start=temp;
     }
     else
     {
