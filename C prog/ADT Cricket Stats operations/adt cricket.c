@@ -14,8 +14,6 @@ void search();
 
 int main() 
 {
-    printf("Name: PRITHVIRAJ SAWANT\n");
-    printf("Roll No: 16014022147\n");
     int ch;
     while (ch != 6)
     {
