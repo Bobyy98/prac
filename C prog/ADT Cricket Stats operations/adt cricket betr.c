@@ -10,7 +10,7 @@ struct player
 };
 
 struct player p[100];
-int n; // Current number of players
+int n; 
 
 void insert();
 void del();
