@@ -9,7 +9,7 @@ void main()
     {
         for (j = 0; j < 3; j++)
         {
-            printf("Enter value for arr[%d][%d]: ", i, j);
+            printf("Enter value for arr[%d][%d]: ", i+1, j+1);
             scanf("%d", &arr[i][j]);
         }
     }
