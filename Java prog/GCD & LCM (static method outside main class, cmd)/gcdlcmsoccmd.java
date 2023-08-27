@@ -15,7 +15,7 @@ class method
     }
 }
 
-public class gcdlcmoccmd 
+public class gcdlcmsoccmd 
 {
     public static void main(String[] args) 
     {
