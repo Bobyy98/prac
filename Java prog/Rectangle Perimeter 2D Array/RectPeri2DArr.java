@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class RectPeri2DArr {
+public class RectPeri2DArr16 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
