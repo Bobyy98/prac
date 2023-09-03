@@ -1,7 +1,7 @@
-class Vehicle {
+class Vehicle7 {
     private int speed;
 
-    public Vehicle() {
+    public Vehicle7() {
         this.speed = 0;
     }
 
@@ -15,7 +15,7 @@ class Vehicle {
     }
 }
 
-class Car extends Vehicle {
+class Car7 extends Vehicle7 {
     @Override
     public void speedUp() {
         System.out.println("The car is accelerating.");
@@ -23,7 +23,7 @@ class Car extends Vehicle {
     }
 }
 
-class Bicycle extends Vehicle {
+class Bicycle7 extends Vehicle7 {
     @Override
     public void speedUp() {
         System.out.println("The bicycle is pedaling faster.");
@@ -33,9 +33,9 @@ class Bicycle extends Vehicle {
 
 public class VehicleSpeed7 {
     public static void main(String[] args) {
-        Vehicle vehicle = new Vehicle();
-        Car car = new Car();
-        Bicycle bicycle = new Bicycle();
+        Vehicle7 vehicle = new Vehicle7();
+        Car7 car = new Car7();
+        Bicycle7 bicycle = new Bicycle7();
 
         System.out.println("Initial speeds:");
         System.out.println("Vehicle speed: " + vehicle.getSpeed());
