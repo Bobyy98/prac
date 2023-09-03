@@ -6,10 +6,10 @@ interface Drawable {
 }
 
 // Create a Circle class that implements the Drawable interface
-class Circle implements Drawable {
+class Circle5 implements Drawable {
     private double radius;
 
-    public Circle(double radius) {
+    public Circle5(double radius) {
         this.radius = radius;
     }
 
@@ -21,11 +21,11 @@ class Circle implements Drawable {
 }
 
 // Create a Rectangle class that implements the Drawable interface
-class Rectangle implements Drawable {
+class Rectangle5 implements Drawable {
     private double width;
     private double height;
 
-    public Rectangle(double width, double height) {
+    public Rectangle5(double width, double height) {
         this.width = width;
         this.height = height;
     }
@@ -38,11 +38,11 @@ class Rectangle implements Drawable {
 }
 
 // Create a Triangle class that implements the Drawable interface
-class Triangle implements Drawable {
+class Triangle5 implements Drawable {
     private double base;
     private double height;
 
-    public Triangle(double base, double height) {
+    public Triangle5(double base, double height) {
         this.base = base;
         this.height = height;
     }
@@ -75,9 +75,9 @@ public class DrawableInter5 {
         double triangleHeight = scanner.nextDouble();
 
         // Create instances of the shapes with user input and call their draw() methods
-        Circle circle = new Circle(circleRadius);
-        Rectangle rectangle = new Rectangle(rectangleWidth, rectangleHeight);
-        Triangle triangle = new Triangle(triangleBase, triangleHeight);
+        Circle5 circle = new Circle5(circleRadius);
+        Rectangle5 rectangle = new Rectangle5(rectangleWidth, rectangleHeight);
+        Triangle5 triangle = new Triangle5(triangleBase, triangleHeight);
 
         circle.draw();
         rectangle.draw();
