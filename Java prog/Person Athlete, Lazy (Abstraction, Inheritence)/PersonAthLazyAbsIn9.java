@@ -1,5 +1,5 @@
 // Abstract class Person
-abstract class Person {
+abstract class Person9 {
     // Abstract method eat()
     public abstract void eat();
 
@@ -8,7 +8,7 @@ abstract class Person {
 }
 
 // Subclass Athlete
-class Athlete extends Person {
+class Athlete extends Person9 {
     @Override
     public void eat() {
         System.out.println("An athlete eats a balanced diet with lots of protein.");
@@ -21,7 +21,7 @@ class Athlete extends Person {
 }
 
 // Subclass LazyPerson
-class LazyPerson extends Person {
+class LazyPerson extends Person9 {
     @Override
     public void eat() {
         System.out.println("A lazy person often eats unhealthy fast food and snacks.");
