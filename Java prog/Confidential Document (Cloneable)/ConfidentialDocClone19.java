@@ -1,10 +1,10 @@
-public class ConfidentialDocClone implements Cloneable {
+public class ConfidentialDocClone19 implements Cloneable {
     private String title;
     private String content;
     private String securityLevel;
 
     // Constructor
-    public ConfidentialDocClone(String title, String content, String securityLevel) {
+    public ConfidentialDocClone19(String title, String content, String securityLevel) {
         this.title = title;
         this.content = content;
         this.securityLevel = securityLevel;
@@ -14,7 +14,7 @@ public class ConfidentialDocClone implements Cloneable {
     @Override
     protected Object clone() throws CloneNotSupportedException {
         // Create a new ConfidentialDocClone object and set its properties
-        ConfidentialDocClone clonedDocument = (ConfidentialDocClone) super.clone();
+        ConfidentialDocClone19 clonedDocument = (ConfidentialDocClone19) super.clone();
         
         // Set the securityLevel of the cloned object to a default value
         clonedDocument.securityLevel = "Default Security Level";
@@ -59,11 +59,11 @@ public class ConfidentialDocClone implements Cloneable {
 
     public static void main(String[] args) {
         // Create a ConfidentialDocClone
-        ConfidentialDocClone originalDocument = new ConfidentialDocClone("Top Secret", "This is confidential content.", "High Security");
+        ConfidentialDocClone19 originalDocument = new ConfidentialDocClone19("Top Secret", "This is confidential content.", "High Security");
 
         try {
             // Clone the original document
-            ConfidentialDocClone clonedDocument = (ConfidentialDocClone) originalDocument.clone();
+            ConfidentialDocClone19 clonedDocument = (ConfidentialDocClone19) originalDocument.clone();
 
             // Print the original and cloned documents
             System.out.println("Original Document: " + originalDocument);
