@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-class Person {
+class Person4 {
     private String firstName;
     private String lastName;
 
-    public Person(String firstName, String lastName) {
+    public Person4(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
@@ -18,11 +18,11 @@ class Person {
     }
 }
 
-class Employee extends Person {
+class Employee4 extends Person4 {
     private int employeeId;
     private String jobTitle;
 
-    public Employee(String firstName, String lastName, int employeeId, String jobTitle) {
+    public Employee4(String firstName, String lastName, int employeeId, String jobTitle) {
         super(firstName, lastName);
         this.employeeId = employeeId;
         this.jobTitle = jobTitle;
@@ -55,7 +55,7 @@ public class PersonEmployeeInherit4 {
         System.out.print("Enter job title: ");
         String jobTitle = scanner.nextLine();
 
-        Employee employee = new Employee(firstName, lastName, employeeId, jobTitle);
+        Employee4 employee = new Employee4(firstName, lastName, employeeId, jobTitle);
 
         System.out.println("First Name: " + employee.getFirstName());
         System.out.println("Last Name: " + employee.getLastName());
