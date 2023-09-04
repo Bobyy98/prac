@@ -15,7 +15,7 @@ class Car31 extends Vehicle31 {
     }
 }
 
-public class VehicleDriveInherit31 {
+public class VehicleDriveOverInherit31 {
     public static void main(String[] args) {
         // Create an instance of the Vehicle class
         Vehicle31 vehicle = new Vehicle31();
