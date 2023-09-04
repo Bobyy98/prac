@@ -46,7 +46,7 @@ class SelectionSort implements Sortable {
     }
 }
 
-public class SortableInter26 {
+public class SortableBubSelInter26 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
